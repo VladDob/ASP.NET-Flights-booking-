@@ -1,35 +1,43 @@
-﻿ul {
-    list-style-type: none;
-    margin: 0 auto, 0 auto;
-    padding: 20px 16px;
-    overflow: hidden;
-    background-color: teal;
+body {
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
-    margin: -10px 0px 0px -10px;
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background-color: #2C3DDC;
+    border: none;
+    margin: 0;
 }
 
 li {
     float: right;
+    margin-right: 30px;
 }
 
-    li a {
-        display: block;
-        color: white;
-        padding: 10px 16px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 17px;
-    }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
 
-        li a:hover {
-            background-color: black;
-        }
+li a:hover {
+    opacity: 0.5;
+}
 
 .Home {
     float: left;
-    font-family: Snell Roundhand, cursive;
 }
 
+
+/*
 li.dropdown {
     display: inline-block;
 }
@@ -43,45 +51,26 @@ li.dropdown {
     z-index: 1;
 }
 
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
 
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    margin: 0;
-    height: 100%;
-}
+*/
 
 .booking {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.main {
-    background-image: url("images/qD94oG.jpg");
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 1000px;
-}
-
-.inputs {
-    margin-bottom: 1em;
-    /* display: inline-block;*/
+    padding-top: 0em;
+    padding-bottom: 0em;
 }
 
 .label {
@@ -90,61 +79,8 @@ body {
     margin-bottom: 1em;
 }
 
-.input,
-.options {
-    display: block;
-    text-align: center;
-    outline: none;
-    border: solid;
-    border-color: teal;
-    height: 25px;
-    background-color: transparent;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 305px;
-}
-
-.options {
-    width: 315px;
-    height: 50px;
-}
-
-#Passenger {
-    margin-top: 30px;
-}
-
-.form {
-    text-align: left;
-    margin: 15px;
-    border-width: 2px;
-    border-style: solid;
-    width: 350px;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.Return,
-.Departure {
-    display: inline-block;
-    width: 150px;
-    border-style: solid;
-    border-color: teal;
-    margin: 0px;
-}
-
-    .Return input,
-    .Departure input {
-        display: inline-block;
-        width: 150px;
-        border-width: 0px;
-    }
-
-#Departure,
-#Return {
-    background: transparent;
-    text-align: left;
-}
-
-span {
+.icon {
+    display:inline-block;
     content: "\2708";
     float: left;
 }
@@ -163,34 +99,11 @@ input[type=submit] {
     font-size: 17px;
     line-height: 20px;
     text-decoration: none;
-    /* remove underline from anchors */
-    margin-left: 50;
-}
-
-#destination {
-    margin-top: -20px;
-    height: 50px;
-}
-
-#Origin {
-    height: 50px;
+    margin-left: 50px;
 }
 
 
 /*Flighs page*/
-
-.info {
-    float: left;
-    text-align: left;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 2px;
-    border-color: teal;
-    padding: 10px;
-    width: 15%;
-    margin: 10px;
-    margin-top: 20px;
-}
 
 .flightsSection {
     display: inline-block;
@@ -227,18 +140,9 @@ input[type=submit] {
 }
 
 .title {
-    font-family: courier, arial, helvetica;
-    font-size: 50px;
+    font-size: 25px;
     margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-#flightsPage {
-    background-image: url("images/sky.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: fit-content;
+    margin-top: 20px;
 }
 
 .destinations {
@@ -252,17 +156,19 @@ input[type=submit] {
     display: inline-block;
     border-style: solid;
     border-radius: 10px;
+    border-color: #2C3DDC;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
-    .card :hover {
-        opacity: 0.5;
-    }
+.card :hover {
+    opacity: 0.5;
+}
 
-img {
+.img {
     width: 300px;
     height: 180px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .lastrow {
@@ -272,7 +178,7 @@ img {
 }
 
 .button {
-    background-color: teal;
+    background-color: #2C3DDC;
     width: 300px;
     float: right;
     margin-right: 25%;
@@ -280,140 +186,64 @@ img {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: white;
 }
 
 
-/*
+/*---------------------------------------------------------------------------------*/
 
-
-Admin page css:
-
-
-*/
-
-body.admin {
-    font-family: Arial, Helvetica, sans-serif;
+button[type=submit] {
+    background-color: #2C3DDC;
+    color: white;
+    padding: 16px 20px;
     margin: auto;
-}
-
-ul.admin {
-    list-style-type: none;
-    padding: 20px 16px;
-    overflow: hidden;
-    background-color: teal;
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-}
-
-li.admin {
-    float: left;
-    font-family: Snell Roundhand, cursive;
-}
-
-    li.admin a.admin {
-        display: block;
-        color: white;
-        padding: 10px 16px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-        li.admin a.admin:hover {
-            background-color: black;
-        }
-
-span.admin {
-    content: "\2708";
-}
-
-main.admin {
-    margin-top: 100px;
-}
-
-.cardAdmin {
-    display: inline-block;
-    background-color: teal;
-    width: 300px;
-    text-align: center;
-    padding: 20px;
-    font-size: 25px;
-}
-
-th.admin,
-td.admin {
-    border: 1px solid black;
-}
-
-td.admin {
-    width: 200px;
-    padding: 10px;
-}
-
-.buttonAdmin {
-    background-color: teal;
-    width: fit-content;
-}
-
-
-/*
-
-
-Sign-in page css
-
-
-
-*/
-
-body.sign {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-ul.sign {
-    list-style-type: none;
-    margin: 0 auto, 0 auto;
-    padding: 20px 16px;
-    overflow: hidden;
-    background-color: teal;
-    width: 100%;
-    margin: -10px 0px 0px -10px;
-}
-
-li.sign {
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
     float: right;
 }
 
-    li.sign a.sign {
-        display: block;
-        color: white;
-        padding: 10px 16px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-        li.sign a.sign:hover {
-            background-color: black;
-        }
-
-.Home {
-    float: left;
-    font-family: Snell Roundhand, cursive;
+input[type=submit] {
+    background-color: #2C3DDC;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 100px;
 }
 
-span.sign {
-    content: "\2708";
+input[value="Make Reservation"] {
+    background-color: #2C3DDC;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 200px;
 }
 
+input[type=text],
+input[type=password] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5px 0 5px 0;
+    display: inline-block;
+    border-color: #2C3DDC;
+    background: white;
+}
 
-/* style inputs and link buttons */
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: white;
+    outline: none;
+}
 
-input.sign,
-.btnSign {
+input,
+.btn {
     width: 100%;
     padding: 12px;
     border: none;
@@ -427,23 +257,51 @@ input.sign,
     /* remove underline from anchors */
 }
 
-    input.sign:hover,
-    .btnSign:hover {
-        opacity: 1;
-    }
+input:hover,
+.btn:hover {
+    opacity: 1;
+}
+
+input {
+    border: solid;
+}
 
 
-    /* style the submit button */
+/*------------------------------*/
 
-    input.sign[type=submit] {
-        background-color: teal;
-        color: white;
-        cursor: pointer;
-        border: none;
-    }
+.registerbtn {
+    background-color: #2C3DDC;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+.container {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    height: 55px;
+    padding: 10px;
+    text-align: center;
+}
 
 
-/* Two-column layout */
+/*Log-in*/
 
 .col {
     float: left;
@@ -453,44 +311,10 @@ input.sign,
     margin-top: 5px;
 }
 
-
-/* Clear floats after the columns */
-
 .row:after {
     content: "";
     display: table;
     clear: both;
-}
-
-
-/* vertical line */
-
-.vl {
-    position: center;
-    left: 50%;
-    transform: translate(-50%);
-    border: 2px solid #ddd;
-    height: 175px;
-}
-
-
-/* text inside the vertical line */
-
-.vl-innertext {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    padding: 8px 10px;
-}
-
-
-/* hide some text on medium and large screens */
-
-.hide-md-lg {
-    display: none;
 }
 
 
@@ -501,385 +325,135 @@ input.sign,
     border-radius: 0px 0px 4px 4px;
 }
 
-
-/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 650px) {
-    .col {
-        width: 100%;
-        margin-top: 0;
-    }
-    /* hide the vertical line */
-    .vl {
-        display: none;
-    }
-    /* show the hidden text on small screens */
-    .hide-md-lg {
-        display: block;
-        text-align: center;
-    }
-}
-
-form.sign {
-    width: 25%;
+form {
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 90px;
+    margin-top: 50px;
+    text-align: center;
 }
 
-input.sign {
-    border: solid;
+.square {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-#Reg {
-    border-right: solid;
-    border-width: 1px;
-    border-color: lightgrey;
+.optionAdmin {
+    background-color: #2C3DDC;
+    width: 10%;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.9;
 }
 
-#flightsPage {
-    background-image: url("images/sky.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.optionAdmin:hover {
+    opacity: 1;
+}
+
+.details {
+    text-align:center;
+    margin: auto;
+}
+
+.fieldsHead {
     height: fit-content;
+    width: 75%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 12%;
 }
 
-
-/*
-
-profile page
-
-
-*/
-
-body.profile {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+.fields {
+    height: fit-content;
+    width: 80%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 12%;
+    color: grey;
 }
 
-
-/* Add padding to container */
-
-.cont {
-    padding: 10px 25px 0px 25px;
-    width: 600px;
-    margin: auto;
-}
-
-
-/* Full-width input fields */
-
-button[type=submit] {
-    width: 200px;
-    display: inline;
-    float: right;
-    background-color: teal;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    opacity: 0.9;
-}
-
-    button[type=submit]:hover {
-        opacity: 1;
-    }
-
-input.profile[type=submit] {
-    background-color: teal;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
+.field {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
     width: 100px;
-    opacity: 0.9;
-}
-
-input.profile[type=text],
-input.profile[type=password] {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 5px 0 5px 0;
-    display: inline-block;
-    border-color: teal;
-    background: white;
-}
-
-    input.profile[type=text]:focus,
-    input.profile[type=password]:focus {
-        background-color: white;
-        outline: none;
-    }
-
-
-/* Overwrite default styles of hr */
-
-.hrProfile {
-    border: 1px solid #f1f1f1;
-    border-color: teal;
-    margin-bottom: 25px;
-}
-
-
-/* Add a blue text color to links */
-
-a.profile {
-    color: teal;
-}
-
-
-/* Set a grey background color and center the text of the "sign in" section */
-
-ul.profile {
-    list-style-type: none;
-    margin: 0;
-    padding: 20px 16px;
-    overflow: hidden;
-    background-color: teal;
-    width: 100%;
-}
-
-li.profile {
-    float: right;
-}
-
-    li.profile a.profile {
-        display: block;
-        color: white;
-        padding: 10px 16px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-        li.profile a.profile:hover {
-            background-color: black;
-        }
-
-.Home {
-    float: left;
-    font-family: Snell Roundhand, cursive;
-}
-
-span.profile {
-    content: "\2708";
-}
-
-.infoProfile {
-    text-align: left;
-    font-size: 20px;
-    display: inline-block;
-    margin-bottom: 30px;
-}
-
-#pass {
-    float: none;
-    margin-left: 200px;
-}
-
-
-/*
-
-
-
-reg + forgot pass + info pages css
-
-
-
-
-*/
-
-
-/*registration+ForgotPsw*/
-
-body.reg {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-
-
-/* Add padding to container */
-
-.containerReg {
-    padding: 10px 25px 0px 25px;
-    width: 300px;
-    margin: auto;
-    text-align: center;
-}
-
-
-/* Full-width input fields */
-
-button.reg[type=submit] {
-    background-color: teal;
-    color: white;
-    padding: 16px 20px;
-    margin: auto;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-input.reg[type=submit] {
-    background-color: teal;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-input.reg[type=text],
-input.reg[type=password] {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 5px 0 5px 0;
-    display: inline-block;
-    border-color: teal;
-    background: white;
-}
-
-    input.reg[type=text]:focus,
-    input.reg[type=password]:focus {
-        background-color: white;
-        outline: none;
-    }
-
-
-/* Overwrite default styles of hr */
-
-hr.reg {
-    border: 1px solid #f1f1f1;
-    border-color: teal;
-    margin-bottom: 25px;
-}
-
-
-/* Set a style for the submit button */
-
-.registerbtnReg {
-    background-color: teal;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    opacity: 0.9;
-}
-
-    .registerbtnReg:hover {
-        opacity: 1;
-    }
-
-
-/* Add a blue text color to links */
-
-a.reg {
-    color: teal;
-}
-
-
-/* Set a grey background color and center the text of the "sign in" section */
-
-ul.reg {
-    list-style-type: none;
-    margin: 0;
-    padding: 20px 16px;
-    overflow: hidden;
-    background-color: teal;
-    width: 100%;
-}
-
-li.reg {
-    float: right;
-}
-
-    li.reg a.reg {
-        display: block;
-        color: white;
-        padding: 10px 16px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-        li.reg a.reg:hover {
-            background-color: black;
-        }
-
-.HomeReg {
-    float: left;
-    font-family: Snell Roundhand, cursive;
-}
-
-span.reg {
-    content: "\2708";
-}
-
-
-/*
-.FirstName,
-.LastName {
-    display: inline-block; 
-}
-*/
-
-p.reg {
-    text-align: center;
-}
-
-#flightsPage {
-    background-image: url("images/sky.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-}
-
-.containerSigninReg {
-    margin: auto;
-}
-
-
-/*Info page css*/
-
-tr.reg {
-    height: 700px;
-    background-color: black;
-    opacity: 0.5;
-    color: white;
-    vertical-align: top;
-}
-
-th.reg {
-    width: 25%;
-}
-
-.contentReg {
-    margin-top: 70px;
-}
-
-.infoReg {
-    margin-top: 150px;
     font-size: 15px;
 }
 
-.titleReg {
-    font-family: Courier, monospace;
-    font-size: 20px;
+a,
+a:visited {
+    text-decoration: none;
 }
 
-.subtitleReg {
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 90px;
+
+/*--flight page form---*/
+
+.form {
+    margin: 15px;
+    border-width: 2px;
+    border-style: solid;
+    width: 70%;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.inputs {
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+.input,
+.options {
+    text-align: center;
+    border: solid;
+    border-color: #2C3DDC;
+    background-color: transparent;
+    width: 200px;
+    height: 15px;
+}
+
+.options {
+    width: 315px;
+    height: 50px;
+}
+
+#Passenger {
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+}
+
+.Return,
+.Departure {
+    display: inline-block;
+    border-color: #2C3DDC;
+    margin: 0px;
+    height: 10px;
+}
+
+#Departure,
+#Return {
+    background: transparent;
+    border-color: #2C3DDC;
+    height: 8px;
+}
+
+#destination {
+    height: 12px;
+}
+
+#Origin {
+    height: 12px;
 }

@@ -1,98 +1,118 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
 }
 
-    <body>
-        <main id="flightsPage">
-            <section class="info">
-                <div class="pickdOrigin">
-                    <h5>Origin: City1</h5>
-                </div>
-                <div class="pickedDestination">
-                    <h5>Destination: City2</h5>
-                </div>
-                <div class="pickedDeparture">
-                    <h5>Departure date: mm/dd/yy</h5>
-                </div>
-                <div class="pickedReturn">
-                    <h5>Return date: mm/dd/yy</h5>
-                </div>
-                <div class="pickedPasengers">
-                    <h5>No. of pasangers: x</h5>
-                </div>
-            </section>
-            <section class="flightsSection">
 
-                <div class="title">Departure Flights</div>
 
-                <div class="flight">
-                    <div class="flightDetails">
-                        <div class="flightTime"> Take off at: <br> 00:00 </div>
-                        <div class="flightTime"> Arrive at: <br> 00:00</div>
-                        <div class="priceButton">$$$</div>
-                    </div>
+   
+<div class="form">
+    <div class="inputs">
+        <label for="Origin" class="label">Departure</label>
+        <input type="text" placeholder="Departure" id="Origin" class="input">
+    </div>
+    <div class="inputs">
+        <label for="destination" class="label">Destination</label>
+        <input type="text" placeholder="Destination" id="destination" class="input">
+    </div>
 
-                </div>
-                <div class="flight">
-                    <div class="flightDetails">
-                        <div class="flightTime"> Take off at: <br> 00:00 </div>
-                        <div class="flightTime"> Arrive at: <br> 00:00</div>
-                        <div class="priceButton">$$$</div>
-                    </div>
+    <div class="inputs">
+        <div class="Departure">
+            <label for="Departure" class="label">Departure</label>
+            <input type="date" value="Departure" id="Departure" class="input">
+        </div>
+    </div>
 
-                </div>
-                <div class="flight">
-                    <div class="flightDetails">
-                        <div class="flightTime"> Take off at: <br> 00:00 </div>
-                        <div class="flightTime"> Arrive at: <br> 00:00</div>
-                        <div class="priceButton">$$$</div>
-                    </div>
-                </div>
-                <div class="flight">
-                    <div class="flightDetails">
-                        <div class="flightTime"> Take off at: <br> 00:00 </div>
-                        <div class="flightTime"> Arrive at: <br> 00:00</div>
-                        <div class="priceButton">$$$</div>
-                    </div>
+    <div class="inputs">
+        <div class="Return">
+            <label for="Return" class="label">Return</label>
+            <input type="date" value="Return" id="Return" class="input">
+        </div>
+    </div>
+    <div class="inputs">
+        <label for="Passenger" class="label">Passengers</label>
+        <select id="Passenger" class="options">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
 
-                </div>
+    <input type="submit" class="button">
 
-                <div class="title">Return Flights</div>
+</div>
 
-                <div class="flight">
-                    <div class="flightDetails">
-                        <div class="flightTime"> Take off at: <br> 00:00 </div>
-                        <div class="flightTime"> Arrive at: <br> 00:00</div>
-                        <div class="priceButton">$$$</div>
-                    </div>
+<section class="flightsSection">
 
-                </div>
-                <div class="flight">
-                    <div class="flightDetails">
-                        <div class="flightTime"> Take off at: <br> 00:00 </div>
-                        <div class="flightTime"> Arrive at: <br> 00:00</div>
-                        <div class="priceButton">$$$</div>
-                    </div>
+    <div class="title">Departure Flights</div>
 
-                </div>
-                <div class="flight">
-                    <div class="flightDetails">
-                        <div class="flightTime"> Take off at: <br> 00:00 </div>
-                        <div class="flightTime"> Arrive at: <br> 00:00</div>
-                        <div class="priceButton">$$$</div>
-                    </div>
+    <div class="flight">
+        <div class="flightDetails">
+            <div class="flightTime"> Take off at: <br> 00:00 </div>
+            <div class="flightTime"> Arrive at: <br> 00:00</div>
+            <div class="priceButton">$$$</div>
+        </div>
 
-                </div>
-                <div class="flight">
-                    <div class="flightDetails">
-                        <div class="flightTime"> Take off at: <br> 00:00 </div>
-                        <div class="flightTime"> Arrive at: <br> 00:00</div>
-                        <div class="priceButton">$$$</div>
-                    </div>
-                </div>
+    </div>
+    <div class="flight">
+        <div class="flightDetails">
+            <div class="flightTime"> Take off at: <br> 00:00 </div>
+            <div class="flightTime"> Arrive at: <br> 00:00</div>
+            <div class="priceButton">$$$</div>
+        </div>
 
-            </section>
-        </main>
+    </div>
+    <div class="flight">
+        <div class="flightDetails">
+            <div class="flightTime"> Take off at: <br> 00:00 </div>
+            <div class="flightTime"> Arrive at: <br> 00:00</div>
+            <div class="priceButton">$$$</div>
+        </div>
+    </div>
+    <div class="flight">
+        <div class="flightDetails">
+            <div class="flightTime"> Take off at: <br> 00:00 </div>
+            <div class="flightTime"> Arrive at: <br> 00:00</div>
+            <div class="priceButton">$$$</div>
+        </div>
 
-    </body>
+    </div>
+
+    <div class="title">Return Flights</div>
+
+    <div class="flight">
+        <div class="flightDetails">
+            <div class="flightTime"> Take off at: <br> 00:00 </div>
+            <div class="flightTime"> Arrive at: <br> 00:00</div>
+            <div class="priceButton">$$$</div>
+        </div>
+
+    </div>
+    <div class="flight">
+        <div class="flightDetails">
+            <div class="flightTime"> Take off at: <br> 00:00 </div>
+            <div class="flightTime"> Arrive at: <br> 00:00</div>
+            <div class="priceButton">$$$</div>
+        </div>
+
+    </div>
+    <div class="flight">
+        <div class="flightDetails">
+            <div class="flightTime"> Take off at: <br> 00:00 </div>
+            <div class="flightTime"> Arrive at: <br> 00:00</div>
+            <div class="priceButton">$$$</div>
+        </div>
+
+    </div>
+    <div class="flight">
+        <div class="flightDetails">
+            <div class="flightTime"> Take off at: <br> 00:00 </div>
+            <div class="flightTime"> Arrive at: <br> 00:00</div>
+            <div class="priceButton">$$$</div>
+        </div>
+    </div>
+
+</section>
+    

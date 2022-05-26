@@ -6,9 +6,13 @@
 
   <ItemGroup>
     <Compile Remove="Views\NewFolder\**" />
+    <Compile Remove="Views\SignIn\**" />
     <Content Remove="Views\NewFolder\**" />
+    <Content Remove="Views\SignIn\**" />
     <EmbeddedResource Remove="Views\NewFolder\**" />
+    <EmbeddedResource Remove="Views\SignIn\**" />
     <None Remove="Views\NewFolder\**" />
+    <None Remove="Views\SignIn\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,10 +20,30 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.9" />
+    <Content Remove="Views\Admin\AdminPage.cshtml" />
+    <Content Remove="Views\Destinations\Destinations.cshtml" />
+    <Content Remove="Views\Flights\Flights.cshtml" />
+    <Content Remove="Views\Home\Index.cshtml" />
+    <Content Remove="Views\Payment\Payment.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Admin\AdminPage.cshtml" />
+    <None Include="Views\Destinations\Destinations.cshtml" />
+    <None Include="Views\Flights\Flights.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Payment\Payment.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.8" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.ViewCompilation" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.8">
       <PrivateAssets>all</PrivateAssets>

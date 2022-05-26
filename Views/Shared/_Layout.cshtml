@@ -1,41 +1,46 @@
-﻿@inject Microsoft.AspNetCore.Identity.SignInManager<User> signInManager
+﻿@* @inject Microsoft.AspNetCore.Identity.SignInManager<User> signInManager *@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="~/css/style.css">
-    <title>FLYWITHUS</title>
-   
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <span>&#9992;</span>
-                <li class="Home"><a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FlyWithUs.com</a></li>
-                <li><a class="navbar-brand" asp-area="" asp-controller="InfoPage" asp-action="InfoPage">INFO</a></li>
-                <li><a class="navbar-brand" asp-area="" asp-controller="SignIn" asp-action="SignIn">SIGN IN</a></li>
-                <li><a class="navbar-brand" asp-area="" asp-controller="Registration" asp-action="Registration">REGISTER</a></li>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="~/css/style.css" asp-append-version="true">
+       
+
+        <title>FLYWITHUS</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+
+                    <li class="Home icon"><a asp-area="" asp-controller="Home" asp-action="Index">FlyWithUs<span>&#9992;</span></a></li>
+                    <!--
+                        <li><a asp-area="" asp-controller="Admin" asp-action="AdminPage">ADMIN</a></li>
+                        <li><a asp-area="" asp-controller="SignIn" asp-action="SignIn">SIGN IN</a></li>
+                        <li><a asp-area="" asp-controller="Registration" asp-action="Registration">REGISTER</a></li>
+                    -->
+                    <partial name="_LoginPartial" />
+                </ul>
                 
-</ul>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - FlightBooking - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </nav>
+        </header>
+        <div class="">
+            <main role="main" class="pb-3">
+                 @RenderBody()
+            </main>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
-</body>
-</html>
+
+        <!--<footer class="border-top footer text-muted">
+            <div class="">
+                &copy; 2021 - FlightBooking - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>-->
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <!--<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </body>
+    </html>

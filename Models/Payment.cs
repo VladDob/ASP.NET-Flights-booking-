@@ -20,10 +20,7 @@ namespace FlightBooking.Models
 
         public int ReservationId { get; set; }
 
-
-        //"virtual" key word seems to be optional when doing foreign keys
         public virtual Reservation Reservation { get; set; }
 
-        public virtual User User { get; set; }
     }
 }
